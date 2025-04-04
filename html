@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations - Docker Deployment</title>
+    <style>
+        /* General page styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: rgbBackgroundAnimation 10s infinite alternate;
+        }
+
+        /* RGB Background Animation */
+        @keyframes rgbBackgroundAnimation {
+            0% { background-color: rgb(255, 0, 0); }    /* Red */
+            25% { background-color: rgb(0, 255, 0); }    /* Green */
+            50% { background-color: rgb(0, 0, 255); }    /* Blue */
+            75% { background-color: rgb(255, 255, 0); }  /* Yellow */
+            100% { background-color: rgb(255, 0, 255); } /* Magenta */
+        }
+
+        /* The postcard style */
+        .postcard {
+            background-color: #fff;
+            width: 60%;
+            max-width: 600px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: postcardAnimation 3s ease-in-out infinite;
+        }
+
+        /* Animation for the postcard */
+        @keyframes postcardAnimation {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Title styling inside the postcard */
+        .title {
+            font-size: 2.5em;
+            color: #2c3e50;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            animation: titleAnimation 2s ease-in-out infinite;
+        }
+
+        /* Animation for the title */
+        @keyframes titleAnimation {
+            0% { color: #2c3e50; }
+            50% { color: #e74c3c; }
+            100% { color: #2c3e50; }
+        }
+
+        /* Optional additional styles */
+        .content {
+            font-size: 1.2em;
+            color: #34495e;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="postcard">
+        <div class="title">Congratulations, You Have Successfully Deployed WebApplication on Docker..!</div>
+        <div class="content">This is just the beginning of your journey. Keep going!</div>
+    </div>
+
+</body>
+</html>
